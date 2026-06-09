@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta name="google-site-verification" content="4c6vog5UHRMC4YSmN-B3IHnLxH9sN-Bn5MdiW5Zf8hs" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="정한열 교수 | 대림대학교 교양직업교육센터 | AI와 코딩, AI와 사회변화 강의 | Hanyeol Jeong, Professor at Daelim University College">
+<meta name="keywords" content="정한열, 정한열 교수, 대림대학교, 대림대, AI와 코딩, AI와 사회변화, AI 교육, 프롬프트 엔지니어링, Hanyeol Jeong, Daelim University">
+<title>정한열 교수 | 대림대학교 — Hanyeol Jeong, Professor</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0D1B2A;
+    --navy-mid: #1A2E45;
+    --blue-accent: #1E6FD9;
+    --blue-light: #3B8BF5;
+    --teal: #0ABFAE;
+    --white: #FFFFFF;
+    --gray-100: #F5F7FA;
+    --gray-200: #E8ECF2;
+    --gray-500: #7A8A9E;
+    --gray-700: #3D4E63;
+    --text: #1A2332;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Noto Sans KR', 'Inter', sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--navy);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--teal);
+  }
+  nav {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 56px;
+  }
+  .nav-name {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .nav-name span { color: var(--teal); }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+  }
+  nav ul a {
+    color: var(--gray-200);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  nav ul a:hover { color: var(--teal); }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1A3A5C 100%);
+    padding: 72px 24px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 360px; height: 360px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(10,191,174,0.12) 0%, transparent 70%);
+  }
+  .hero-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--teal);
+    object-fit: cover;
+    flex-shrink: 0;
+    background: var(--navy-mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: var(--teal);
+    overflow: hidden;
+  }
+  .hero-photo-placeholder {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--teal);
+    background: var(--navy-mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px;
+    flex-shrink: 0;
+  }
+  .hero-text {}
+  .hero-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--teal);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .hero-name-ko {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .hero-name-en {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--gray-500);
+    margin-top: 4px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.04em;
+  }
+  .hero-title {
+    margin-top: 16px;
+    font-size: 15px;
+    color: var(--gray-200);
+    line-height: 1.6;
+  }
+  .hero-tags {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tag {
+    background: rgba(10,191,174,0.15);
+    color: var(--teal);
+    border: 1px solid rgba(10,191,174,0.3);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* ── SECTIONS ── */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  section {
+    padding: 56px 24px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  section + section {
+    border-top: 1px solid var(--gray-200);
+  }
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--blue-accent);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 28px;
+  }
+
+  /* ── PROFILE INFO ── */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .info-item {
+    background: var(--gray-100);
+    border-radius: 10px;
+    padding: 18px 20px;
+    border-left: 3px solid var(--teal);
+  }
+  .info-item-label {
+    font-size: 11px;
+    color: var(--gray-500);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .info-item-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+  }
+  .info-item-sub {
+    font-size: 12px;
+    color: var(--gray-500);
+    margin-top: 2px;
+  }
+
+  /* ── COURSES ── */
+  .course-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .course-card {
+    border: 1px solid var(--gray-200);
+    border-radius: 12px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .course-card:hover {
+    box-shadow: 0 8px 32px rgba(13,27,42,0.1);
+    transform: translateY(-2px);
+  }
+  .course-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+  }
+  .course-card.blue::before { background: var(--blue-accent); }
+  .course-card.teal::before { background: var(--teal); }
+  .course-no {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin-bottom: 8px;
+  }
+  .course-title-ko {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .course-title-en {
+    font-size: 12px;
+    color: var(--gray-500);
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 16px;
+  }
+  .course-desc {
+    font-size: 14px;
+    color: var(--gray-700);
+    line-height: 1.65;
+    margin-bottom: 16px;
+  }
+  .course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .course-tag {
+    background: var(--gray-100);
+    color: var(--gray-700);
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  /* ── INTERESTS ── */
+  .interest-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .interest-item {
+    background: var(--gray-100);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .interest-icon { font-size: 28px; margin-bottom: 10px; }
+  .interest-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .interest-desc {
+    font-size: 12px;
+    color: var(--gray-500);
+    line-height: 1.5;
+  }
+
+  /* ── CAREER ── */
+  .timeline {
+    position: relative;
+    padding-left: 24px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 8px; bottom: 8px;
+    width: 2px;
+    background: var(--gray-200);
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 28px;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--teal);
+    border: 2px solid var(--white);
+    box-shadow: 0 0 0 2px var(--teal);
+  }
+  .timeline-period {
+    font-size: 12px;
+    color: var(--blue-accent);
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 4px;
+  }
+  .timeline-role {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .timeline-org {
+    font-size: 14px;
+    color: var(--gray-500);
+    margin-top: 2px;
+  }
+
+  /* ── CONTACT ── */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .contact-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--gray-100);
+    border-radius: 10px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: var(--text);
+    transition: background 0.2s, transform 0.2s;
+    border: 1px solid transparent;
+  }
+  .contact-card:hover {
+    background: var(--white);
+    border-color: var(--gray-200);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  }
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .contact-icon.linkedin { background: #0A66C2; }
+  .contact-icon.naver { background: #03C75A; }
+  .contact-icon.blog { background: #FF6B35; }
+  .contact-label {
+    font-size: 11px;
+    color: var(--gray-500);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .contact-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-top: 1px;
+  }
+
+  /* ── INTEL BADGE ── */
+  .badge-bar {
+    background: linear-gradient(90deg, var(--navy) 0%, var(--navy-mid) 100%);
+    border-radius: 12px;
+    padding: 24px 28px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 32px;
+  }
+  .badge-icon { font-size: 32px; }
+  .badge-text-main {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+  }
+  .badge-text-sub {
+    font-size: 13px;
+    color: var(--gray-500);
+    margin-top: 2px;
+  }
+  .badge-num {
+    margin-left: auto;
+    text-align: right;
+  }
+  .badge-num-val {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--teal);
+    font-family: 'Inter', sans-serif;
+    line-height: 1;
+  }
+  .badge-num-label {
+    font-size: 11px;
+    color: var(--gray-500);
+    margin-top: 2px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    color: var(--gray-500);
+    text-align: center;
+    padding: 28px 24px;
+    font-size: 13px;
+    margin-top: 40px;
+  }
+  footer a { color: var(--teal); text-decoration: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 680px) {
+    .hero-inner { flex-direction: column; text-align: center; gap: 24px; }
+    .hero-tags { justify-content: center; }
+    .info-grid { grid-template-columns: 1fr; }
+    .course-grid { grid-template-columns: 1fr; }
+    .interest-list { grid-template-columns: 1fr 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .hero-name-ko { font-size: 28px; }
+    nav ul { gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <nav>
+    <div class="nav-name">대림대학교 정한열 <span>교수</span></div>
+    <ul>
+      <li><a href="#about">소개</a></li>
+      <li><a href="#courses">강의</a></li>
+      <li><a href="#research">관심분야</a></li>
+      <li><a href="#contact">연락처</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <img class="hero-photo" src="data:image/png;base64,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" alt="정한열 교수">
+    <div class="hero-text">
+      <div class="hero-label">Professor · Daelim University College</div>
+      <div class="hero-name-ko">정한열</div>
+      <div class="hero-name-en">Hanyeol Jeong</div>
+      <div class="hero-title">
+        대림대학교 교양직업교육센터 교수<br>
+        <span style="color:#7A8A9E; font-size:13px;">Vocational Education Center</span>
+      </div>
+      <div class="hero-tags">
+        <span class="tag">AI 교육</span>
+        <span class="tag">Generative AI</span>
+        <span class="tag">Prompt Engineering</span>
+        <span class="tag">Digital Literacy</span>
+        <span class="tag">블록코딩</span>
+        <span class="tag">AI 리터러시</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-eyebrow">Profile · 인물정보</div>
+  <div class="section-title">교수 소개 / About</div>
+
+  <div class="info-grid">
+    <div class="info-item">
+      <div class="info-item-label">소속 · Affiliation</div>
+      <div class="info-item-value">대림대학교</div>
+      <div class="info-item-sub">Daelim University College</div>
+    </div>
+    <div class="info-item">
+      <div class="info-item-label">학과 · Department</div>
+      <div class="info-item-value">교양직업교육센터</div>
+      <div class="info-item-sub">Vocational Education Center</div>
+    </div>
+    <div class="info-item">
+      <div class="info-item-label">직위 · Position</div>
+      <div class="info-item-value">교수</div>
+      <div class="info-item-sub">Professor</div>
+    </div>
+    <div class="info-item">
+      <div class="info-item-label">전문분야 · Expertise</div>
+      <div class="info-item-value">AI 교육 · 생성형 AI · 프롬프트 엔지니어링</div>
+      <div class="info-item-sub">Generative AI Education &amp; Digital Transformation</div>
+    </div>
+    <div class="info-item">
+      <div class="info-item-label">학력 · Education</div>
+      <div class="info-item-value">경기대학교 경영학박사 (MIS전공)</div>
+      <div class="info-item-sub">Ph.D. in Business Administration (MIS), Kyonggi University</div>
+    </div>
+    <div class="info-item">
+      <div class="info-item-label">경력 · Background</div>
+      <div class="info-item-value">前 IT기업 임원 출신 실무형 교수</div>
+      <div class="info-item-sub">Former IT Executive → Practitioner Professor</div>
+    </div>
+  </div>
+
+  <a href="https://blog.naver.com/patriot_daelim" target="_blank" rel="noopener" style="text-decoration:none;">
+    <div class="badge-bar" style="cursor:pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+      <div class="badge-icon">🏅</div>
+      <div>
+        <div class="badge-text-main">Intel AI For Workforce (AI4FW) Facilitator &amp; Trainer</div>
+        <div class="badge-text-sub">대림대 Intel AI4FW 인증서 받으러 가기 →</div>
+      </div>
+    </div>
+  </a>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="section-eyebrow">Courses · 담당 강의</div>
+  <div class="section-title">강의 소개 / Courses</div>
+
+  <div class="course-grid">
+    <div class="course-card blue">
+      <div class="course-no">Course 01</div>
+      <div class="course-title-ko">AI와 코딩</div>
+      <div class="course-title-en">AI and Coding</div>
+      <div class="course-desc">
+        PC 실습 중심의 교과목으로, 생성형 AI를 활용한 콘텐츠 생성(텍스트·이미지·영상·음악 등 UI 중심)과 실무 활용 능력을 기릅니다.
+        블록코딩과 바이브 코딩(Vibe Coding)을 연계하여 논리적 문제해결 능력을 단계적으로 향상시키는 데 중점을 둡니다.
+      </div>
+      <div class="course-tags">
+        <span class="course-tag">PC 실습</span>
+        <span class="course-tag">생성형 AI 콘텐츠</span>
+        <span class="course-tag">이미지·영상·음악 생성</span>
+        <span class="course-tag">블록코딩</span>
+        <span class="course-tag">Vibe Coding</span>
+        <span class="course-tag">논리적 문제해결</span>
+      </div>
+    </div>
+
+    <div class="course-card teal">
+      <div class="course-no">Course 02</div>
+      <div class="course-title-ko">AI와 사회변화</div>
+      <div class="course-title-en">AI and Social Change</div>
+      <div class="course-desc">
+        스마트폰을 활용해 AI를 실무에 적용하는 인력을 양성하는 교과목입니다.
+        생성형 AI가 사회·직업·윤리에 미치는 영향을 비판적으로 탐구하고,
+        RTNF 프롬프트 엔지니어링 프레임워크를 통해 누구나 AI를 효과적으로 활용할 수 있는 역량을 기릅니다.
+      </div>
+      <div class="course-tags">
+        <span class="course-tag">스마트폰 활용</span>
+        <span class="course-tag">생성형 AI</span>
+        <span class="course-tag">RTNF 프레임워크</span>
+        <span class="course-tag">AI 리터러시</span>
+        <span class="course-tag">디지털 윤리</span>
+        <span class="course-tag">AI 실무 활용</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="section-eyebrow">Research Interests · 연구 및 관심분야</div>
+  <div class="section-title">관심분야 / Research Interests</div>
+
+  <div class="interest-list">
+    <div class="interest-item">
+      <div class="interest-icon">🤖</div>
+      <div class="interest-title">생성형 AI 교육</div>
+      <div class="interest-desc">Generative AI<br>비전공자 대상 AI 리터러시 교육 설계</div>
+    </div>
+    <div class="interest-item">
+      <div class="interest-icon">✍️</div>
+      <div class="interest-title">프롬프트 엔지니어링</div>
+      <div class="interest-desc">Prompt Engineering<br>RTNF 프레임워크 개발 및 적용</div>
+    </div>
+    <div class="interest-item">
+      <div class="interest-icon">💻</div>
+      <div class="interest-title">AI 코딩 교육</div>
+      <div class="interest-desc">AI &amp; Coding Education<br>알고리즘적 사고 기반 블록코딩</div>
+    </div>
+    <div class="interest-item">
+      <div class="interest-icon">🔄</div>
+      <div class="interest-title">디지털 전환</div>
+      <div class="interest-desc">Digital Transformation<br>직업교육에서의 AI 활용 혁신</div>
+    </div>
+    <div class="interest-item">
+      <div class="interest-icon">⚖️</div>
+      <div class="interest-title">AI 윤리</div>
+      <div class="interest-desc">AI Ethics<br>디지털 윤리·데이터 편향 교육</div>
+    </div>
+    <div class="interest-item">
+      <div class="interest-icon">📱</div>
+      <div class="interest-title">모바일 AI 리터러시</div>
+      <div class="interest-desc">Mobile AI Literacy<br>스마트폰 기반 실습 교육 설계</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-eyebrow">Contact · 연락처</div>
+  <div class="section-title">연락처 및 채널 / Contact &amp; Links</div>
+
+  <div class="contact-grid">
+    <a class="contact-card" href="https://www.linkedin.com/in/hanyeol-jeong" target="_blank" rel="noopener">
+      <div class="contact-icon linkedin">💼</div>
+      <div>
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-value">hanyeol-jeong</div>
+      </div>
+    </a>
+    <a class="contact-card" href="https://blog.naver.com/patriot_daelim" target="_blank" rel="noopener">
+      <div class="contact-icon naver">N</div>
+      <div>
+        <div class="contact-label">네이버 블로그 · Naver Blog</div>
+        <div class="contact-value">patriot_daelim</div>
+      </div>
+    </a>
+    <a class="contact-card" href="https://dept.daelim.ac.kr/lba/cms/FrProfessorCon/ProfessorView.do?MENU_ID=190&SITE_NO=36&CONTENTS_NO=&PROF_GBN_CD=P1002&PROF_SEQ=1279" target="_blank" rel="noopener">
+      <div class="contact-icon blog" style="background:#1E6FD9;">🏫</div>
+      <div>
+        <div class="contact-label">소속 · Affiliation</div>
+        <div class="contact-value">대림대학교</div>
+      </div>
+    </a>
+  </div>
+
+  <div style="margin-top: 20px; padding: 20px 24px; background: var(--gray-100); border-radius: 10px; font-size: 14px; color: var(--gray-700); line-height: 1.7;">
+    📍 <strong>대림대학교 교양직업교육센터</strong><br>
+    경기도 안양시 동안구 임곡로 29 · Daelim University College, Anyang, Gyeonggi-do, Korea
+  </div>
+</section>
+
+<footer>
+  <p>정한열 교수 · Hanyeol Jeong, Professor</p>
+  <p style="margin-top:6px;">대림대학교 교양직업교육센터 · Daelim University College</p>
+  <p style="margin-top:10px;">
+    <a href="https://www.linkedin.com/in/hanyeol-jeong" target="_blank">LinkedIn</a> &nbsp;·&nbsp;
+    <a href="https://blog.naver.com/patriot_daelim" target="_blank">네이버 블로그</a>
+  </p>
+</footer>
+
+</body>
+</html>
